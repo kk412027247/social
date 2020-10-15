@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+
+security:
+  jwt:
+    uri: /auth/**
+    header: Authrization
+    prefix: Bearer
+    expiration: 86400
+    secret: JwtSecretKey
